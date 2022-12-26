@@ -6,7 +6,7 @@
 ## <u>Sample Usage</u>
 <br>
 
-```
+```cpp
 #include <Logger.h>
 
 int main()
