@@ -26,5 +26,7 @@ int main()
 ## Output
 <img src = "imgs/SampleUsage.jpg">
 
+<br>
+
 ## Usage
 Just include the single header Logger.h, that's it!!
