@@ -45,9 +45,7 @@ public:
     template <typename T = std::string_view, typename... Args>
     static void LogInfo(const T& msg, const Args&... args)
     {
-        std::string wholeMessage = Logger::join(args...);
-        wholeMessage = msg + wholeMessage;
-        log(wholeMessage.c_str(), Log::INFO);
+        log(msg, Log::INFO);
     }
 
     static void LogWarning(std::string_view msg)
@@ -107,12 +105,6 @@ private:
     static void updateCurrentTime()
     {
         time(&s_currentTime);
-    }
-
-    template<typename... Args>
-    static std::string join(Args... args)
-    {
-        return (std::string(args) + ...);
     }
 
 private:
